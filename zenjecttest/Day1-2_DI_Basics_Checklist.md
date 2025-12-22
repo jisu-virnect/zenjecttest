@@ -136,7 +136,7 @@ namespace Practice.Day1.WithDI
 3. 사운드 재생
 
 **당신이 할 일**:
-- [ ] `IInventorySystem.cs` 인터페이스 작성
+- [x] `IInventorySystem.cs` 인터페이스 작성
   - `bool HasItem(string itemName)` 메서드
   - `void UseItem(string itemName)` 메서드
 - [ ] `IHealthSystem.cs` 인터페이스 작성
