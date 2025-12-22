@@ -7,9 +7,9 @@
 ## 📅 Day 1: DI의 "왜"를 이해하기
 
 ### 1단계: 문제 상황 체감하기
-- [ ] 새 Unity 씬 만들기 (`Scenes/DI_Practice_Day1.unity`)
-- [ ] `Scripts/Practice/Day1` 폴더 생성
-- [ ] DI 없는 코드 작성해보기 (아래 과제 참고)
+- [x] 새 Unity 씬 만들기 (`Scenes/DI_Practice_Day1.unity`)
+- [x] `Scripts/Practice/Day1` 폴더 생성
+- [x] DI 없는 코드 작성해보기 (아래 과제 참고)
 
 #### 📝 실습 과제 1-1: DI 없는 코드의 문제점 느끼기
 ```csharp
@@ -139,10 +139,15 @@ namespace Practice.Day1.WithDI
 - [x] `IInventorySystem.cs` 인터페이스 작성
   - `bool HasItem(string itemName)` 메서드
   - `void UseItem(string itemName)` 메서드
-- [ ] `IHealthSystem.cs` 인터페이스 작성
+- [x] `IHealthSystem.cs` 인터페이스 작성
+  - 시나리오: PlayerItemUser가 포션 사용
+	1. 포션 사용 버튼 클릭
+	2. 인벤토리에서 포션 차감 
+	3. ➡️ 플레이어 체력 회복  ← IHealthSystem의 역할! void Heal()
+	4. 사운드 재생
   - `void Heal(int amount)` 메서드
   - `int CurrentHealth { get; }` 프로퍼티
-- [ ] `ISoundPlayer.cs` 인터페이스 작성
+- [x] `ISoundPlayer.cs` 인터페이스 작성
   - `void Play(string soundName)` 메서드
 - [ ] `InventorySystem.cs` 구현 클래스 작성
 - [ ] `HealthSystem.cs` 구현 클래스 작성
